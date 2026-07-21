@@ -1,0 +1,16 @@
+{
+  "name": "6 Workout Clinic | La Verne Athletic Club",
+  "short_name": "6 Workout Clinic",
+  "description": "FREE 6-session baseball training clinic. Train. Compete. Get Better.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2efe6",
+  "theme_color": "#1c3d29",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
