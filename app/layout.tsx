@@ -19,13 +19,13 @@ const anton = Anton({
 export const metadata: Metadata = {
   title: '6 Workout Clinic | La Verne Athletic Club',
   description:
-    'A FREE 6-session baseball training clinic led by two of the best college coaches in the game. For middle school & high school players. Aug 10–27. Spots are limited — sign up today!',
+    'A FREE 6-session baseball development clinic for middle school & high school players. Get your reps in before fall ball and travel ball tryouts. Aug 10–26. Spots are limited — sign up today!',
   generator: 'v0.app',
   manifest: '/manifest.json',
   openGraph: {
     title: '6 Workout Clinic | La Verne Athletic Club',
     description:
-      'FREE 6-session baseball training clinic. Train. Compete. Get Better. Spots are limited — sign up today!',
+      'FREE 6-session baseball development clinic. Get your reps in. Get better. Get ready. Spots are limited — sign up today!',
     type: 'website',
   },
 }

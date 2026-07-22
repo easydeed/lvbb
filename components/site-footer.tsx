@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="text-center sm:text-left">
           <p className="font-display text-lg uppercase">{CLINIC.club}</p>
           <p className="text-sm text-background/60">
-            6 Workout Clinic · Train. Compete. Get Better.
+            6 Workout Clinic · Get Your Reps In. Get Better. Get Ready.
           </p>
         </div>
 

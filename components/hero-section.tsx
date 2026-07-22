@@ -6,7 +6,7 @@ export function HeroSection() {
       {/* background image */}
       <div className="absolute inset-0">
         <img
-          src="/images/hero-baseball.png"
+          src="/images/hero-baseball.jpg"
           alt=""
           aria-hidden="true"
           className="size-full object-cover opacity-25"
@@ -19,9 +19,9 @@ export function HeroSection() {
           {CLINIC.club}
         </span>
 
-        <h1 className="mt-6 font-display text-6xl uppercase leading-[0.85] text-balance sm:text-8xl">
-          6 Workout
-          <span className="mt-1 block text-accent">Clinic</span>
+        <h1 className="mt-6 font-display text-5xl uppercase leading-[0.9] text-balance sm:text-7xl">
+          Free 6-Session
+          <span className="mt-1 block text-accent">Baseball Development Clinic</span>
         </h1>
 
         <p className="mt-6 max-w-md rounded-md bg-primary-foreground/10 px-5 py-2 font-display text-xl uppercase tracking-wide sm:text-2xl">
@@ -29,9 +29,10 @@ export function HeroSection() {
         </p>
 
         <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
-          A 6-session training clinic led by two of the best college coaches in the
-          game. Designed to elevate your fundamentals, athleticism and mental
-          approach on and off the field.
+          A free, high-intensity development clinic for middle school and high
+          school players. Whether you&apos;re building reps for fall ball or
+          trying to make a travel ball team, this is where the work starts —
+          led by two of the most accomplished coaches in Southern California.
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
