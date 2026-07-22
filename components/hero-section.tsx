@@ -2,17 +2,9 @@ import { CLINIC } from '@/lib/clinic-data'
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-primary text-primary-foreground">
-      {/* background image */}
-      <div className="absolute inset-0">
-        <img
-          src="/images/hero-baseball.jpg"
-          alt=""
-          aria-hidden="true"
-          className="size-full object-cover opacity-25"
-        />
-        <div className="absolute inset-0 bg-primary/70" />
-      </div>
+    <section className="relative overflow-hidden bg-[#132419] text-primary-foreground">
+      <div className="hero-bg absolute inset-0" aria-hidden="true" />
+      <div className="hero-overlay absolute inset-0" aria-hidden="true" />
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-4 py-16 text-center sm:py-24">
         <span className="rounded-full border border-accent/60 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-accent">
