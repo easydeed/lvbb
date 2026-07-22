@@ -43,7 +43,7 @@ export async function POST(request: Request) {
   const fieldErrors: Record<string, string> = {}
   if (!playerName) fieldErrors.playerName = 'Player name is required.'
   if (!VALID_AGES.has(playerAge)) {
-    fieldErrors.playerAge = 'Select a player age between 8 and 12.'
+    fieldErrors.playerAge = 'Select a player age of 11 or 12.'
   }
   if (!parentName) fieldErrors.parentName = 'Parent/guardian name is required.'
   if (!phone) fieldErrors.phone = 'Phone number is required.'

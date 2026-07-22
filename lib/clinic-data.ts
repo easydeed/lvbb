@@ -49,7 +49,7 @@ export const DATES: {
   { id: '2026-08-26', month: 'AUG', day: '26', suffix: 'TH', label: 'August 26' },
 ]
 
-export const PLAYER_AGES = [8, 9, 10, 11, 12] as const
+export const PLAYER_AGES = [11, 12] as const
 
 export const POSITIONS = [
   'Pitcher',

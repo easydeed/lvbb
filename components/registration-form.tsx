@@ -188,7 +188,7 @@ export function RegistrationForm({
               className={fieldBase}
             >
               <option value="" disabled>
-                Select age (8–12)
+                Select age (11 or 12)
               </option>
               {PLAYER_AGES.map((age) => (
                 <option key={age} value={age}>
