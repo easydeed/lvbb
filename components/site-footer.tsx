@@ -1,5 +1,5 @@
 import { Phone, Globe, Camera } from 'lucide-react'
-import { CLINIC } from '@/lib/clinic-data'
+import { CLINIC, LOCATIONS } from '@/lib/clinic-data'
 
 export function SiteFooter() {
   return (
@@ -8,7 +8,10 @@ export function SiteFooter() {
         <div className="text-center sm:text-left">
           <p className="font-display text-lg uppercase">{CLINIC.club}</p>
           <p className="text-sm text-background/60">
-            6 Workout Clinic · Get Your Reps In. Get Better. Get Ready.
+            6 Workout Clinic · 12U Players · {CLINIC.time}
+          </p>
+          <p className="mt-1 text-xs text-background/50">
+            {LOCATIONS.map((v) => `${v.name} — ${v.address}`).join(' · ')}
           </p>
         </div>
 

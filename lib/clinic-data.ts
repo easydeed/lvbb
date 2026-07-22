@@ -17,6 +17,17 @@ export const CLINIC = {
   instagramHref: 'https://instagram.com/laverneathleticclub',
 } as const
 
+export const LOCATIONS: { name: string; address: string }[] = [
+  {
+    name: 'Mt. SAC',
+    address: '1100 N. Grand Ave., Walnut, CA 91789',
+  },
+  {
+    name: 'Bonita High School',
+    address: '3102 D Street, La Verne, CA 91750',
+  },
+]
+
 export const DATES: { month: string; day: string; suffix: string }[] = [
   { month: 'AUG', day: '10', suffix: 'TH' },
   { month: 'AUG', day: '12', suffix: 'TH' },
@@ -34,7 +45,8 @@ export const FEATURES: {
   {
     icon: Target,
     title: 'Elite Instruction',
-    description: 'Learn directly from a National Coach of the Year and a veteran high school head coach.',
+    description:
+      'Learn directly from a National Coach of the Year and a veteran head coach.',
   },
   {
     icon: Dumbbell,
@@ -44,7 +56,8 @@ export const FEATURES: {
   {
     icon: Flame,
     title: 'Live Reps & Competition',
-    description: "Game-like situations so you're ready for fall ball and travel ball tryouts.",
+    description:
+      "Game-like situations so you're ready for fall ball and travel ball tryouts.",
   },
   {
     icon: Brain,
@@ -71,6 +84,8 @@ export const COACHES: {
   {
     name: 'Coach Ryan Marcos',
     title: 'Head Coach, Bonita High School Baseball',
-    bullets: ['23 years of coaching experience developing players in the La Verne area'],
+    bullets: [
+      '23 years of coaching experience developing players in the La Verne area',
+    ],
   },
 ]

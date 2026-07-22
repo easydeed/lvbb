@@ -19,13 +19,13 @@ const anton = Anton({
 export const metadata: Metadata = {
   title: '6 Workout Clinic | La Verne Athletic Club',
   description:
-    'A FREE 6-session 12U baseball development clinic at Mt. SAC and Bonita High School. Get your reps in before fall ball and travel ball tryouts. Aug 10–26, 5:30–7:30 PM. Spots are limited — sign up today!',
+    'FREE 6-session 12U baseball development clinic. Aug 10, 12, 17, 19, 24 & 26 · 5:30 PM – 7:30 PM. Locations: Mt. SAC (1100 N. Grand Ave., Walnut, CA 91789) and Bonita High School (3102 D Street, La Verne, CA 91750). Spots are limited — sign up today!',
   generator: 'v0.app',
   manifest: '/manifest.json',
   openGraph: {
-    title: '6 Workout Clinic | La Verne Athletic Club',
+    title: 'Free 6-Session 12U Baseball Development Clinic | La Verne Athletic Club',
     description:
-      'FREE 6-session 12U baseball development clinic. Get your reps in. Get better. Get ready. Spots are limited — sign up today!',
+      'FREE 6-session clinic for 12U Players. Aug 10–26 · 5:30 PM – 7:30 PM at Mt. SAC and Bonita High School. Get your reps in. Get better. Get ready.',
     type: 'website',
   },
 }

@@ -1,11 +1,10 @@
 import { Clock, Gift, Users, Backpack, MapPin, Star } from 'lucide-react'
-import { CLINIC } from '@/lib/clinic-data'
+import { CLINIC, LOCATIONS } from '@/lib/clinic-data'
 import { ClubBadge } from '@/components/club-badge'
 
 const DETAILS = [
   { icon: Clock, label: 'Time', value: CLINIC.time },
   { icon: Users, label: 'Who', value: CLINIC.openTo },
-  { icon: MapPin, label: 'Locations', value: CLINIC.location },
   { icon: Gift, label: 'Cost', value: `${CLINIC.price} — limited spots available` },
   { icon: Backpack, label: 'What To Bring', value: CLINIC.whatToBring },
 ]
@@ -40,6 +39,25 @@ export function DetailsSection() {
             </div>
           </div>
         ))}
+
+        <div className="flex items-start gap-4 rounded-lg border border-border bg-card p-5 shadow-sm sm:col-span-2">
+          <div className="flex size-11 shrink-0 items-center justify-center rounded-md bg-accent text-accent-foreground">
+            <MapPin className="size-5" aria-hidden="true" />
+          </div>
+          <div className="min-w-0 flex-1">
+            <h3 className="text-sm font-bold uppercase tracking-wide text-primary">
+              Locations
+            </h3>
+            <ul className="mt-2 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {LOCATIONS.map((venue) => (
+                <li key={venue.name} className="text-sm leading-relaxed text-muted-foreground">
+                  <span className="font-semibold text-primary">{venue.name}</span>
+                  <span className="mt-0.5 block">{venue.address}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-accent/15 px-5 py-4 text-center">
