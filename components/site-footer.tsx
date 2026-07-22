@@ -18,10 +18,15 @@ export function SiteFooter() {
         <nav className="flex flex-col items-center gap-3 text-sm sm:flex-row sm:gap-6">
           <a
             href={CLINIC.phoneHref}
-            className="inline-flex min-h-11 items-center gap-2 transition-colors hover:text-accent"
+            className="inline-flex min-h-11 flex-col items-center justify-center gap-0.5 transition-colors hover:text-accent sm:items-start"
           >
-            <Phone className="size-4" aria-hidden="true" />
-            {CLINIC.phone}
+            <span className="inline-flex items-center gap-2">
+              <Phone className="size-4" aria-hidden="true" />
+              {CLINIC.phone}
+            </span>
+            <span className="text-[10px] uppercase tracking-wide text-background/50">
+              {CLINIC.phoneLabel}
+            </span>
           </a>
           <a
             href={CLINIC.websiteHref}

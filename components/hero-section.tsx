@@ -35,9 +35,13 @@ export function HeroSection() {
           High School.
         </p>
 
+        <p className="mt-6 max-w-lg text-sm leading-relaxed text-primary-foreground/80 sm:text-base">
+          {CLINIC.capacityNote}
+        </p>
+
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
           <a
-            href="#register"
+            href="/register"
             className="inline-flex min-h-12 w-full items-center justify-center rounded-md bg-accent px-8 font-display text-lg uppercase tracking-wide text-accent-foreground transition-transform hover:scale-[1.03] active:scale-95 sm:w-auto"
           >
             Reserve Your Spot
@@ -54,7 +58,7 @@ export function HeroSection() {
           <span className="rounded bg-accent px-2 py-0.5 text-accent-foreground">
             {CLINIC.price}
           </span>
-          Spots are limited — sign up today!
+          20 players per session — sign up today!
         </div>
       </div>
 

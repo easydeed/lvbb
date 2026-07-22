@@ -1,5 +1,7 @@
 import { Target, Dumbbell, Flame, Brain, type LucideIcon } from 'lucide-react'
 
+export const SESSION_CAPACITY = 20
+
 export const CLINIC = {
   club: 'La Verne Athletic Club',
   title: '6 Workout Clinic',
@@ -9,8 +11,11 @@ export const CLINIC = {
   location: 'Mt. SAC & Bonita High School',
   openTo: '12U Players',
   whatToBring: 'Glove, cleats, bat, water bottle & a positive attitude',
-  phone: '(909) 596-2096',
-  phoneHref: 'tel:+19095962096',
+  phone: '(626) 483-5464',
+  phoneHref: 'tel:+16264835464',
+  phoneLabel: 'Call or Text',
+  capacityNote:
+    'Small by design — just 20 players per session for maximum reps and coaching attention.',
   website: 'laverneathleticclub.com',
   websiteHref: 'https://laverneathleticclub.com',
   instagram: '@laverneathleticclub',
@@ -28,14 +33,32 @@ export const LOCATIONS: { name: string; address: string }[] = [
   },
 ]
 
-export const DATES: { month: string; day: string; suffix: string }[] = [
-  { month: 'AUG', day: '10', suffix: 'TH' },
-  { month: 'AUG', day: '12', suffix: 'TH' },
-  { month: 'AUG', day: '17', suffix: 'TH' },
-  { month: 'AUG', day: '19', suffix: 'TH' },
-  { month: 'AUG', day: '24', suffix: 'TH' },
-  { month: 'AUG', day: '26', suffix: 'TH' },
+/** Canonical session keys stored in the database (ISO dates). */
+export const DATES: {
+  id: string
+  month: string
+  day: string
+  suffix: string
+  label: string
+}[] = [
+  { id: '2026-08-10', month: 'AUG', day: '10', suffix: 'TH', label: 'August 10' },
+  { id: '2026-08-12', month: 'AUG', day: '12', suffix: 'TH', label: 'August 12' },
+  { id: '2026-08-17', month: 'AUG', day: '17', suffix: 'TH', label: 'August 17' },
+  { id: '2026-08-19', month: 'AUG', day: '19', suffix: 'TH', label: 'August 19' },
+  { id: '2026-08-24', month: 'AUG', day: '24', suffix: 'TH', label: 'August 24' },
+  { id: '2026-08-26', month: 'AUG', day: '26', suffix: 'TH', label: 'August 26' },
 ]
+
+export const PLAYER_AGES = [8, 9, 10, 11, 12] as const
+
+export const POSITIONS = [
+  'Pitcher',
+  'Catcher',
+  'Infield',
+  'Outfield',
+  'Utility',
+  'Undecided',
+] as const
 
 export const FEATURES: {
   icon: LucideIcon

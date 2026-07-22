@@ -4,8 +4,10 @@ import { CoachesSection } from '@/components/coaches-section'
 import { FeaturesSection } from '@/components/features-section'
 import { DatesSection } from '@/components/dates-section'
 import { DetailsSection } from '@/components/details-section'
-import { RegistrationSection } from '@/components/registration-section'
+import { RegisterCta } from '@/components/register-cta'
 import { SiteFooter } from '@/components/site-footer'
+
+export const dynamic = 'force-dynamic'
 
 export default function Page() {
   return (
@@ -17,7 +19,7 @@ export default function Page() {
         <FeaturesSection />
         <DatesSection />
         <DetailsSection />
-        <RegistrationSection />
+        <RegisterCta />
       </main>
       <SiteFooter />
     </div>
