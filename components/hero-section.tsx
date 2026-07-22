@@ -20,7 +20,7 @@ export function HeroSection() {
         </span>
 
         <h1 className="mt-6 font-display text-5xl uppercase leading-[0.9] text-balance sm:text-7xl">
-          Free 6-Session
+          Free 6-Session 12U
           <span className="mt-1 block text-accent">Baseball Development Clinic</span>
         </h1>
 
@@ -29,10 +29,11 @@ export function HeroSection() {
         </p>
 
         <p className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
-          A free, high-intensity development clinic for middle school and high
-          school players. Whether you&apos;re building reps for fall ball or
-          trying to make a travel ball team, this is where the work starts —
-          led by two of the most accomplished coaches in Southern California.
+          A free, high-intensity development clinic for 12U players. Whether
+          you&apos;re building reps for fall ball or trying to make a travel
+          ball team, this is where the work starts — led by two of the most
+          accomplished coaches in Southern California, at Mt. SAC and Bonita
+          High School.
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">

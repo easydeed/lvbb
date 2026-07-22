@@ -1,10 +1,11 @@
-import { Clock, Gift, Users, Backpack, Star } from 'lucide-react'
+import { Clock, Gift, Users, Backpack, MapPin, Star } from 'lucide-react'
 import { CLINIC } from '@/lib/clinic-data'
 import { ClubBadge } from '@/components/club-badge'
 
 const DETAILS = [
   { icon: Clock, label: 'Time', value: CLINIC.time },
   { icon: Users, label: 'Who', value: CLINIC.openTo },
+  { icon: MapPin, label: 'Locations', value: CLINIC.location },
   { icon: Gift, label: 'Cost', value: `${CLINIC.price} — limited spots available` },
   { icon: Backpack, label: 'What To Bring', value: CLINIC.whatToBring },
 ]
