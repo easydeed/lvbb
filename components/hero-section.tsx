@@ -3,10 +3,17 @@ import { CLINIC } from '@/lib/clinic-data'
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-[#132419] text-primary-foreground">
-      <div className="hero-bg absolute inset-0" aria-hidden="true" />
+      {/* full-bleed background photo */}
+      <img
+        src="/hero-bg.jpg"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 size-full object-cover object-[center_30%] sm:object-center"
+      />
+      {/* dark green overlay — stronger at bottom for text legibility */}
       <div className="hero-overlay absolute inset-0" aria-hidden="true" />
 
-      <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-4 py-16 text-center sm:py-24">
+      <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center px-4 py-16 text-center sm:py-24">
         <span className="rounded-full border border-accent/60 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-accent">
           {CLINIC.club}
         </span>
@@ -51,7 +58,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <div className="stitch-rule h-1.5 w-full opacity-80" />
+      <div className="stitch-rule relative z-10 h-1.5 w-full opacity-80" />
     </section>
   )
 }
